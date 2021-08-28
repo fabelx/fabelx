@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vladyslav</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+<div class="circle">
+    <div class="photo"></div>
+    <div class="text">
+        <p>Vladyslav Novotnyi -> Software Engineer -></p>
+    </div>
+</div>
+<script>
+    const text = document.querySelector('.text p')
+    text.innerHTML = text.innerText.split("").map(
+        (char, i) => `<span style="transform:rotate(${i * 8.3}deg)">${char}</span>`
+    ).join("")
+</script>
+</body>
+</html>
